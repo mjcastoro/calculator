@@ -38,7 +38,6 @@ function operate () {
     }
 }
 
-
 const buttons = document.querySelectorAll(".num-btn");
 
 for (let button of buttons) {
@@ -60,4 +59,10 @@ for (let button of operateBtns) {
     })
 }
 
+const displayTarget = document.querySelector(".display");
 
+function clearDisplay () {
+    displayTarget.innerText = "";
+}
+
+document.querySelector(".clear-btn").addEventListener("click", clearDisplay);
